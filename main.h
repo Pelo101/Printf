@@ -13,8 +13,9 @@
 int _putchar(char c);
 int _printf(const char *format, ...);
 int get_flags(const char *format, int *i);
-int get_width(const char *format, int *i, va_list list);
-
+int get_width(const char *format, int *i, va_list list
+int handle_print(const char *fmt, int *i,
+va_list list, char buffer[], int flags, int width, int precision, int size) 
 
 /* FLAGS */
 #define F
@@ -22,21 +23,17 @@ int get_width(const char *format, int *i, va_list list);
 /* SIZES */
 #define S
 
-
-
 /**
- *struct FormatHandler - handles format
- *@fmt - The format.
- *@fn: The function associated.
+ * struct fmt - Struct op
+ *
+ * @fmt: The format.
+ * @fn: The function associated.
  */
-
-struct FormatHandler
+struct fmt
 {
 	char fmt;
 	int (*fn)(va_list, char[], int, int, int, int);
-}
-
-
+};
 
 
 
