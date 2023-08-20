@@ -10,8 +10,9 @@
 
 #define BUFF_SIZE 1024
 
-int _putchar(char c);
+
 int _printf(const char *format, ...);
+int _putchar(char c);
 int get_flags(const char *format, int *i);
 int get_width(const char *format, int *i, va_list list);
 
@@ -33,10 +34,9 @@ int get_width(const char *format, int *i, va_list list);
 struct FormatHandler
 {
 	char fmt;
+
 	int (*fn)(va_list, char[], int, int, int, int);
-}
-
-
+};
 
 
 
