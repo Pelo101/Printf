@@ -10,6 +10,7 @@ void print_size(const char *format, int value)
 {
 	int precision = -1;
 
+
 	while (*format)
 	{
 		if (*format == '.')
@@ -27,6 +28,6 @@ void print_size(const char *format, int value)
 		++format;
 	}
 
-	print_integer_with_precision(value, precision);
+      print_integer_with_precision(value, precision);
 }
 

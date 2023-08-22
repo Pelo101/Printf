@@ -9,17 +9,15 @@
 
 void my_function(int fd)
 {
+	ssize_t bytes_written = write(fd, buffer, strlen(buffer));
 
 	char buffer[1024];
 
 	memset(buffer, 0, sizeof(buffer));
 
-
-	ssize_t bytes_written = write(fd, buffer, strlen(buffer));
-
 	if (bytes_written == -1)
 	{
-		return (error);
+		return ;
 
 	}
 }
