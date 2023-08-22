@@ -4,6 +4,7 @@
 /**
 *print_rot -Print a string with ROT13 encryption.
 *@args: list of arguments.
+*Return: Numbers of chars printed.
 */
 
 int print_rot(va_list args)
@@ -34,6 +35,3 @@ int print_rot(va_list args)
 
 	return (count);
 }
-
-
-
