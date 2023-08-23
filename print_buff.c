@@ -11,9 +11,9 @@
 
 void my_function(int fd)
 {
-	ssize_t bytes_written = write(fd, buffer, strlen(buffer));
 
 	char buffer[1024];
+	ssize_t bytes_written = write(fd, buffer, strlen(buffer));
 
 	_memset(buffer, 0, sizeof(buffer));
 
