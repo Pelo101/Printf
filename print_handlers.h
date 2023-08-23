@@ -1,6 +1,8 @@
 #ifndef PRINT_HANDLERS_
 #define PRINT_ HANDLERS_
 
+#include <stdarg.h>
+
 /*Handler function prototypes*/
 
 

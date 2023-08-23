@@ -76,8 +76,4 @@ void print_size(const char *format, int value)
 
 	print_integer_with_precision(value, precision);
 }
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 76ebf743c249418a4e56858909fa211f5f4a38b1

@@ -13,11 +13,13 @@ void my_function(int fd)
 
 	char buffer[1024];
 
-	memset(buffer, 0, sizeof(buffer));
+	_memset(buffer, 0, sizeof(buffer));
 
 	if (bytes_written == -1)
 	{
-		return ;
+		perror("Error writing to file descriptor");
+                return;
 
 	}
+	return;
 }

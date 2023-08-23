@@ -39,6 +39,18 @@ struct fmt
  */
 typedef struct fmt fmt_t;
 
+/**
+*@format: the format.
+*@printer: pointer.
+*/
+typedef struct {
+    char format;
+    int (*printer)(va_list);
+} FormatSpecifier;
+
+
+
+
 int _printf(const char *format, ...);
 int handle_print(const char *fmt, int *i,
 va_list list, char buffer[], int flags, int width, int precision, int size);
