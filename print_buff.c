@@ -1,6 +1,8 @@
 #include <unistd.h>
 #include <string.h>
 #include "main.h"
+#include "print_handlers.h"
+
 /**
  *my_function - print buffer.
  *@fd: file descriptor.
