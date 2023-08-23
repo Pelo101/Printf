@@ -21,5 +21,3 @@ void my_function(int fd)
 
 	}
 }
-
-
